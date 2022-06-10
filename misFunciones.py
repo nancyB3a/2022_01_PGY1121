@@ -16,7 +16,7 @@ def validaRut():
     #Rut debe ser un número entero que se encuentre dentro del rango de 5000000 y 99999999
     while True:
         try:
-            rut=int(input("Ingrese RUT del paciente => "))
+            rut=validaInt("Ingrese RUT del paciente => ")
             if(5000000<=rut<=99999999):
                 break
             else:
