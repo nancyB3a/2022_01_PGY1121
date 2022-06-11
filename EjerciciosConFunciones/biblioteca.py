@@ -20,7 +20,6 @@ def validaInt(texto):
             print("El Valor Ingresado Debe ser un Número!!!")
     return valorInt
 
-
 def primo():
     while True:        
         nro=validaInt("Ingrese un N°: ")
@@ -36,8 +35,15 @@ def factorial():
     while True:
         num=validaInt("Ingrese N°: ")
         break
-    fac=0
+    fac=num
     for i in range(1, num):
-        fac+=num*i
-        print(fac)
+        fac=fac*i
     print(f"El factorial de {num} es {fac}")
+    
+def palindromo():
+    frase=input("Ingrese una frase: ")
+    fraseNew=frase.replace(" ","") #le quito los espacios a la frase
+    if fraseNew==fraseNew[::-1]: #comparo la frase con su inversa
+        print("Palíndrmo")
+    else: 
+        print("No es Palíndromo")    

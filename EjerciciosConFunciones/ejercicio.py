@@ -11,6 +11,6 @@ while opcion!=4:
     elif opcion==2:
         fn.factorial()
     elif opcion==3:
-        print("3")
+        fn.palindromo()
 print("bye")
     
