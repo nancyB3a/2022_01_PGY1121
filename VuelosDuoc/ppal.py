@@ -9,4 +9,8 @@ while opcion!=5:
     if opcion==1:
         fn.imprimeAsientos(asientos)
     elif opcion==2:
-        fn.comprarPasaje(asientos,pasajeros)
+        asientos, pasajeros= fn.comprarPasaje(asientos,pasajeros)
+    elif opcion==3:
+        asientos, pasajeros=fn.anularPasaje(asientos,pasajeros)
+    elif opcion==4:
+        asientos, pasajeros=fn.modificaPasajero(asientos,pasajeros)
